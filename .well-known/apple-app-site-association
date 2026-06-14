@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "W587L7RVSA.com.victorasooye.talent",
+        "paths": [ "/oauth", "/oauth/*" ]
+      }
+    ]
+  }
+}
