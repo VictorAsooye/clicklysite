@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+--paper:#FAF8F4; --paper-2:#F4F0E8; --card:#FFFFFF;
+--ink:#1C1A16; --read:#3A362E; --ink-2:#5A554B; --ink-3:#938C7F; --line:#E7E1D6;
+--accent:#2E4756; --app:#9C7235;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--paper);color:var(--ink);font-family:'Geist',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+a{color:inherit;text-decoration:none;}
+::selection{background:var(--ink);color:var(--paper);}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+<header style="position:sticky;top:0;z-index:50;background:rgba(250,248,244,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);">
+<div style="max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+<a href="../index.dc.html" style="display:flex;align-items:baseline;gap:9px;">
+<span style="font-family:'Instrument Serif',Georgia,serif;font-size:25px;line-height:1;">Clickly</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-3);">LLC</span>
+</a>
+<nav style="display:flex;gap:24px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-2);">
+<a href="../apps/clickly.dc.html" style="transition:color .2s;">Clickly</a>
+<a href="../apps/sundays.dc.html" style="color:var(--ink);">Sundays</a>
+<a href="../apps/mybudget.dc.html" style="transition:color .2s;">mybudget</a>
+</nav>
+</div>
+</header>
+
+<main style="flex:1;max-width:760px;margin:0 auto;width:100%;padding:clamp(36px,5vw,64px) 28px clamp(64px,9vw,96px);">
+
+<p style="margin:0 0 26px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-3);display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+<a href="../index.dc.html" style="white-space:nowrap;transition:color .2s;" style-hover="color:var(--ink);">Clickly LLC</a>
+<span style="color:var(--line);">/</span>
+<a href="../apps/sundays.dc.html" style="white-space:nowrap;color:var(--app);transition:opacity .2s;" style-hover="opacity:0.7;">Sundays</a>
+<span style="color:var(--line);">/</span>
+<span style="white-space:nowrap;color:var(--ink);">Support</span>
+</p>
+
+<h1 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(38px,6.5vw,60px);line-height:1.04;letter-spacing:-0.01em;">Support</h1>
+
+<div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 26px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11.5px;letter-spacing:0.04em;color:var(--ink-3);">
+<span>Replies within 1&ndash;2 business days</span>
+<a href="mailto:victorasooye@gmail.com" style="color:var(--app);transition:opacity .2s;" style-hover="opacity:0.7;">victorasooye@gmail.com</a>
+</div>
+
+<nav style="margin:28px 0 0;display:flex;gap:8px;flex-wrap:wrap;">
+<a href="privacy.dc.html" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);transition:border-color .2s;" style-hover="border-color:var(--ink);">Privacy</a>
+<a href="terms.dc.html" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);transition:border-color .2s;" style-hover="border-color:var(--ink);">Terms</a>
+<a href="support.dc.html" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;padding:8px 14px;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);">Support</a>
+</nav>
+
+<div style="margin-top:clamp(36px,5vw,52px);border-top:1px solid var(--line);padding-top:clamp(32px,4vw,44px);">
+
+<p style="margin:18px 0 0;font-size:17px;line-height:1.7;color:var(--read);">Need help with <strong style="font-weight:600;color:var(--ink);">Sundays</strong>? You're in the right place. If you can't find your answer below, email us and we'll get back to you.</p>
+
+<div style="margin:24px 0 8px;padding:20px 22px;background:var(--paper-2);border:1px solid var(--line);border-radius:12px;display:flex;flex-wrap:wrap;gap:8px 28px;">
+<div>
+<div style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px;">Contact</div>
+<a href="mailto:victorasooye@gmail.com" style="font-size:15px;color:var(--ink);text-decoration:underline;text-underline-offset:2px;">victorasooye@gmail.com</a>
+</div>
+<div>
+<div style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px;">Response time</div>
+<span style="font-size:15px;color:var(--ink);">1&ndash;2 business days</span>
+</div>
+</div>
+<h2 style="margin:48px 0 8px;font-size:22px;font-weight:400;font-family:'Instrument Serif',Georgia,serif;line-height:1.2;color:var(--ink);">Frequently asked questions</h2>
+<div style="margin-top:24px;display:flex;flex-direction:column;">
+<div style="border-top:1px solid var(--line);padding:24px 0;">
+<h3 style="margin:0 0 9px;font-size:17px;font-weight:600;line-height:1.35;color:var(--ink);">How do I create my musician profile?</h3>
+<p style="margin:0;font-size:16px;line-height:1.7;color:var(--ink-3);">[PLACEHOLDER &mdash; answer]</p>
+</div>
+<div style="border-top:1px solid var(--line);padding:24px 0;">
+<h3 style="margin:0 0 9px;font-size:17px;font-weight:600;line-height:1.35;color:var(--ink);">How do churches book musicians?</h3>
+<p style="margin:0;font-size:16px;line-height:1.7;color:var(--ink-3);">[PLACEHOLDER &mdash; answer]</p>
+</div>
+<div style="border-top:1px solid var(--line);padding:24px 0;">
+<h3 style="margin:0 0 9px;font-size:17px;font-weight:600;line-height:1.35;color:var(--ink);">How do payments work?</h3>
+<p style="margin:0;font-size:16px;line-height:1.7;color:var(--ink-3);">[PLACEHOLDER &mdash; answer]</p>
+</div>
+<div style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0;">
+<h3 style="margin:0 0 9px;font-size:17px;font-weight:600;line-height:1.35;color:var(--ink);">How do I delete my account?</h3>
+<p style="margin:0;font-size:16px;line-height:1.7;color:var(--ink-3);">[PLACEHOLDER &mdash; answer]</p>
+</div>
+</div>
+<h2 style="margin:48px 0 14px;font-size:22px;font-weight:400;font-family:'Instrument Serif',Georgia,serif;line-height:1.2;color:var(--ink);">Still need help?</h2>
+<p style="margin:0 0 14px;font-size:16px;line-height:1.72;color:var(--read);">Email <a href="mailto:victorasooye@gmail.com" style="color:var(--app);font-weight:600;text-decoration:underline;text-underline-offset:2px;">victorasooye@gmail.com</a> with the device and OS version, a description of the issue, and a screenshot if you have one.</p>
+
+</div>
+</main>
+
+<footer style="border-top:1px solid var(--line);background:var(--paper-2);">
+<div style="max-width:1080px;margin:0 auto;padding:40px 28px;display:flex;flex-wrap:wrap;gap:18px 32px;align-items:center;justify-content:space-between;">
+<a href="../index.dc.html" style="display:flex;align-items:baseline;gap:9px;">
+<span style="font-family:'Instrument Serif',Georgia,serif;font-size:22px;">Clickly</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-3);">LLC</span>
+</a>
+<div style="display:flex;flex-wrap:wrap;gap:8px 22px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.06em;color:var(--ink-3);">
+<span>© 2026 Clickly LLC</span>
+<a href="mailto:victorasooye@gmail.com" style="transition:color .2s;" style-hover="color:var(--ink);">victorasooye@gmail.com</a>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+</body>
+</html>
