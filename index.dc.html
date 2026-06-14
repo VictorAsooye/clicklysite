@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF8F4; --paper-2:#F4F0E8; --card:#FFFFFF;
+    --ink:#1C1A16; --ink-2:#5A554B; --ink-3:#938C7F; --line:#E7E1D6;
+    --accent:#2E4756; --clickly:#5A4B7C; --sundays:#9C7235; --mybudget:#3F6B52;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:var(--paper);color:var(--ink);font-family:'Geist',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+  a{color:inherit;text-decoration:none;}
+  ::selection{background:var(--ink);color:var(--paper);}
+  @keyframes riseIn{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(250,248,244,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);">
+    <div style="max-width:1080px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <a href="index.dc.html" style="display:flex;align-items:baseline;gap:9px;">
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-size:25px;line-height:1;letter-spacing:0.2px;">Clickly</span>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-3);">LLC</span>
+      </a>
+      <nav style="display:flex;gap:24px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-2);">
+        <a href="apps/clickly.dc.html" style="transition:color .2s;" style-hover="color:var(--ink);">Clickly</a>
+        <a href="apps/sundays.dc.html" style="transition:color .2s;" style-hover="color:var(--ink);">Sundays</a>
+        <a href="apps/mybudget.dc.html" style="transition:color .2s;" style-hover="color:var(--ink);">mybudget</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="flex:1;">
+
+    <section style="max-width:1080px;margin:0 auto;padding:clamp(60px,12vw,132px) 28px clamp(44px,7vw,76px);">
+      <div>
+        <p style="margin:0 0 26px;font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-3);display:flex;align-items:center;gap:12px;">
+          <span style="width:22px;height:1px;background:var(--ink-3);display:inline-block;"></span>
+          Independent app studio · Maryland, USA
+        </p>
+        <h1 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(42px,8.4vw,86px);line-height:1.05;letter-spacing:-0.01em;max-width:14ch;">We design and ship consumer apps.</h1>
+        <p style="margin:clamp(64px,8.5vw,84px) 0 0;font-size:clamp(17px,2.1vw,20px);line-height:1.55;color:var(--ink-2);max-width:46ch;">Clickly is an independent studio. Three apps so far — each one built to be used, not just launched.</p>
+      </div>
+    </section>
+
+    <section style="max-width:1080px;margin:0 auto;padding:0 28px clamp(72px,10vw,120px);">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:38px;">
+        <h2 style="margin:0;font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-2);">The apps</h2>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.12em;color:var(--ink-3);">03 / released &amp; building</span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;">
+
+        <a href="apps/clickly.dc.html" style="display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s,border-color .28s;" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px -24px rgba(28,26,22,0.3);border-color:#D9D2C5;">
+          <div style="height:4px;background:var(--clickly);"></div>
+          <div style="padding:26px 26px 24px;display:flex;flex-direction:column;flex:1;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
+              <span style="width:11px;height:11px;border-radius:50%;background:var(--clickly);"></span>
+              <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--clickly);border:1px solid color-mix(in oklab,var(--clickly) 35%,var(--line));padding:5px 9px;border-radius:999px;">Released</span>
+            </div>
+            <h3 style="margin:0 0 10px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:32px;line-height:1;">Clickly</h3>
+            <p style="margin:0 0 28px;font-size:15px;line-height:1.55;color:var(--ink-2);flex:1;">An intervention app for compulsive phone use — a deliberate pause before you open what pulls you in.</p>
+            <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);display:inline-flex;align-items:center;gap:7px;">View app <span style="font-size:13px;">&rarr;</span></span>
+          </div>
+        </a>
+
+        <a href="apps/sundays.dc.html" style="display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s,border-color .28s;" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px -24px rgba(28,26,22,0.3);border-color:#D9D2C5;">
+          <div style="height:4px;background:var(--sundays);"></div>
+          <div style="padding:26px 26px 24px;display:flex;flex-direction:column;flex:1;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
+              <span style="width:11px;height:11px;border-radius:50%;background:var(--sundays);"></span>
+              <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#FFFFFF;background:var(--sundays);padding:5px 9px;border-radius:999px;">Live</span>
+            </div>
+            <h3 style="margin:0 0 10px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:32px;line-height:1;">Sundays</h3>
+            <p style="margin:0 0 28px;font-size:15px;line-height:1.55;color:var(--ink-2);flex:1;">A marketplace connecting worship musicians with churches and worship gigs. Real bookings, real payments.</p>
+            <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);display:inline-flex;align-items:center;gap:7px;">View app <span style="font-size:13px;">&rarr;</span></span>
+          </div>
+        </a>
+
+        <a href="apps/mybudget.dc.html" style="display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s,border-color .28s;" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px -24px rgba(28,26,22,0.3);border-color:#D9D2C5;">
+          <div style="height:4px;background:var(--mybudget);"></div>
+          <div style="padding:26px 26px 24px;display:flex;flex-direction:column;flex:1;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
+              <span style="width:11px;height:11px;border-radius:50%;background:var(--mybudget);"></span>
+              <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--mybudget);border:1px solid color-mix(in oklab,var(--mybudget) 35%,var(--line));padding:5px 9px;border-radius:999px;">Coming soon</span>
+            </div>
+            <h3 style="margin:0 0 10px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:32px;line-height:1;">mybudget</h3>
+            <p style="margin:0 0 28px;font-size:15px;line-height:1.55;color:var(--ink-2);flex:1;">A budgeting app built around one number — your daily safe-to-spend, after everything that's already spoken for.</p>
+            <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);display:inline-flex;align-items:center;gap:7px;">View app <span style="font-size:13px;">&rarr;</span></span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="border-top:1px solid var(--line);background:var(--paper-2);">
+    <div style="max-width:1080px;margin:0 auto;padding:54px 28px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px 32px;">
+      <div style="min-width:200px;">
+        <div style="display:flex;align-items:baseline;gap:9px;margin-bottom:14px;">
+          <span style="font-family:'Instrument Serif',Georgia,serif;font-size:23px;line-height:1;">Clickly</span>
+          <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-3);">LLC</span>
+        </div>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:var(--ink-2);max-width:30ch;">An independent studio that designs and ships consumer apps.</p>
+      </div>
+
+      <div>
+        <h4 style="margin:0 0 16px;font-family:'Geist Mono',ui-monospace,monospace;font-size:10.5px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-3);">Apps</h4>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:14px;color:var(--ink-2);">
+          <a href="apps/clickly.dc.html" style="transition:color .2s;" style-hover="color:var(--ink);">Clickly</a>
+          <a href="apps/sundays.dc.html" style="transition:color .2s;" style-hover="color:var(--ink);">Sundays</a>
+          <a href="apps/mybudget.dc.html" style="transition:color .2s;" style-hover="color:var(--ink);">mybudget</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="margin:0 0 16px;font-family:'Geist Mono',ui-monospace,monospace;font-size:10.5px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-3);">Legal &amp; support</h4>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:14px;color:var(--ink-2);">
+          <a href="clickly/privacy.dc.html" style="transition:color .2s;" style-hover="color:var(--ink);">Clickly — Privacy · Terms · Support</a>
+          <a href="sundays/privacy.dc.html" style="transition:color .2s;" style-hover="color:var(--ink);">Sundays — Privacy · Terms · Support</a>
+          <a href="mybudget/privacy.dc.html" style="transition:color .2s;" style-hover="color:var(--ink);">mybudget — Privacy · Terms · Support</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="margin:0 0 16px;font-family:'Geist Mono',ui-monospace,monospace;font-size:10.5px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-3);">Contact</h4>
+        <a href="mailto:victorasooye@gmail.com" style="font-size:14px;color:var(--ink-2);transition:color .2s;" style-hover="color:var(--ink);">victorasooye@gmail.com</a>
+      </div>
+    </div>
+    <div style="max-width:1080px;margin:0 auto;padding:0 28px 40px;">
+      <div style="border-top:1px solid var(--line);padding-top:22px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.06em;color:var(--ink-3);">
+        <span>© 2026 Clickly LLC. All rights reserved.</span>
+        <span>Built in Maryland, USA</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
